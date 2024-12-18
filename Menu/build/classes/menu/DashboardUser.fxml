@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="703.0" prefWidth="823.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.UserController">
+   <children>
+      <ImageView fitHeight="201.0" fitWidth="823.0" layoutY="1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../hero1.jpg" />
+         </image>
+      </ImageView>
+
+      <TableView fx:id="tableView" layoutX="725.0" layoutY="590.0" opacity="0.0" prefHeight="13.0" prefWidth="27.0">
+        <columns>
+          <TableColumn fx:id="hargaColumn" prefWidth="127.0" text="Harga" />
+          <TableColumn fx:id="detailColumn" prefWidth="282.0" text="Detail" />
+          <TableColumn fx:id="foodNameColumn" prefWidth="310.0" text="Nama Makanan" />
+        </columns>
+      </TableView>
+      <Pane fx:id="menuBar" layoutX="-1.0" layoutY="211.0" prefHeight="49.0" prefWidth="831.0">
+         <children>
+            <MenuBar layoutX="21.0" layoutY="12.0" prefHeight="25.0" prefWidth="775.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="Beranda">
+                  <items>
+                    <MenuItem onAction="#showBeranda" text="Tampilkan Beranda" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Produk">
+                  <items>
+                    <MenuItem onAction="#showProduk" text="Tampilkan Produk" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Cart">
+                     <items>
+                        <MenuItem onAction="#cart" text="Cart" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Riwayat">
+                     <items>
+                        <MenuItem onAction="#showRiwayatPembelian" text="Riwayat Pembelian" />
+                     </items>
+                  </Menu>
+                <Menu mnemonicParsing="false" text="Keluar">
+                  <items>
+                    <MenuItem onAction="#exitApplication" text="Keluar" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </Pane>
+      <Label layoutX="222.0" layoutY="290.0" text="Selamat Datang Di Furniture Shop">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="29.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="29.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../chair.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Label layoutX="70.0" layoutY="490.0" text="Sofa Kecil" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="229.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bed.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Label layoutX="243.0" layoutY="490.0" text="Tempat Tidur Besar" />
+      <ImageView fitHeight="118.0" fitWidth="114.0" layoutX="445.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../lemari.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Label layoutX="456.0" layoutY="490.0" />
+      <Label layoutX="462.0" layoutY="490.0" text="Lemari Pakaian" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="599.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../big%20sofa.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Label layoutX="677.0" layoutY="490.0" text="Sofa Besar" />
+      <Button layoutX="364.0" layoutY="549.0" mnemonicParsing="false" onAction="#belanja" prefHeight="41.0" prefWidth="102.0" text="Belanja Produk" />
+      <Pane layoutX="4.0" layoutY="638.0" prefHeight="61.0" prefWidth="823.0">
+         <children>
+            <Label layoutX="383.0" layoutY="6.0" text="Toko Furniture" />
+            <Label layoutX="375.0" layoutY="31.0" text="Jl. Raya Indonesia" />
+         </children>
+      </Pane>
+   </children>
+</Pane>
