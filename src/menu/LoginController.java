@@ -20,7 +20,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author Evi Nirmala
+ * @author ThinkPad
  */
 public class LoginController implements Initializable {
     @FXML

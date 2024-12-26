@@ -11,7 +11,7 @@ import java.sql.SQLException;
 
 /**
  *
- * @author Evi Nirmala
+ * @author ThinkPad
  */
 public class Koneksi {
     

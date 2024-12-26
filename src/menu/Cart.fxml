@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="642.0" prefWidth="823.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.CartController">
+
+        <!-- TableView untuk menampilkan isi cart -->
+        <TableView fx:id="cartTable" layoutX="33.0" layoutY="275.0" prefHeight="235.0" prefWidth="780.0">
+            <columns>
+                <TableColumn fx:id="productNameColumn" prefWidth="200" text="Nama Produk" />
+                <TableColumn fx:id="quantityColumn" prefWidth="140.0" text="Jumlah" />
+                <TableColumn fx:id="totalColumn" prefWidth="185.0" text="Total Harga" />
+                <TableColumn fx:id="priceColumn" prefWidth="254.0" text="Harga" />
+            </columns>
+        </TableView>
+     
+        <!-- Tombol untuk checkout -->
+     <Button fx:id="checkoutButton" layoutX="346.0" layoutY="559.0" style="-fx-font-size: 14px;" text="Checkout" />
+      <Label layoutX="476.0" layoutY="521.0" style="-fx-font-size: 16px;" text="Total Keseluruhan:" />
+      <Label fx:id="totalPriceLabel" layoutX="623.0" layoutY="521.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Rp 0" />
+   <ImageView fitHeight="198.0" fitWidth="823.0" layoutX="1.0" layoutY="-1.0" pickOnBounds="true">
+      <image>
+         <Image url="@../hero3.jpg" />
+      </image></ImageView>
+   <Label layoutX="284.0" layoutY="219.0" text="KERANJANG BELANJA">
+      <font>
+         <Font name="System Bold" size="19.0" />
+      </font>
+   </Label>
+   <Button layoutX="33.0" layoutY="235.0" mnemonicParsing="false" text="Beranda" onAction="#backToBeranda" fx:id="backToBerandaButton" />
+</AnchorPane>
